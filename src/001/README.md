@@ -17,8 +17,10 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 This problem is deceptively straight forward.
 
 If we start listing out the multiples of 3: <code>3 + 6 + 9 + 12 + ...</code>
+
 We can see that it is really just: <code>(3 * 1) + (3 * 2) + (3 * 3) + (3 * 4) +
 ...</code>
+
 Which is just: <code>3 * (1 + 2 + 3 + 4 + ...)</code>
 
 Since we are looking for a sum and our sum in the parenthesis is consecutive
