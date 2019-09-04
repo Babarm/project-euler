@@ -9,8 +9,8 @@ int main(int argc, char ** argv) {
     do {
         a = b + fib;
         b = a + fib;
-        fib = a + b;
         result += fib;
+        fib = a + b;
     } while(fib < 4000000);
 
     printf("%d\n", result);
