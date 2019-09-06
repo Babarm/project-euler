@@ -45,16 +45,16 @@ The algorithm would go something like this:
 
 <pre>
 LIMIT := 600851475143
-LARGEST\_FACTOR := 0
+LARGEST_FACTOR := 0
 
 i := 2
 while i * i <= LIMIT:
     if LIMIT mod i is 0:
         LIMIT := LIMIT / i
-        LARGEST\_FACTOR := i
+        LARGEST_FACTOR := i
     else:
         i := i + 1
 
-if LIMIT > LARGEST\_FACTOR:
-    LARGEST\_FACTOR := LIMIT
+if LIMIT > LARGEST_FACTOR:
+    LARGEST_FACTOR := LIMIT
 </pre>
