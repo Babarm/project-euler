@@ -11,10 +11,10 @@ c.o: main.c
 	$(CC) $(CFLAGS) -c $^ -o $@
 
 cpp: cpp.o
-	$(CXX) $(CFLAGS) $^ -o $@
+	$(CXX) $(CFLAGS) -std=c++11 $^ -o $@
 
 cpp.o: main.cpp
-	$(CXX) $(CFLAGS) -c $^ -o $@
+	$(CXX) $(CFLAGS) -std=c++11 -c $^ -o $@
 
 clean:
 	$(RM) *.o c cpp
